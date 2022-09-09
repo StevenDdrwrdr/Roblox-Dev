@@ -24,6 +24,6 @@ end
 --Events
 
 --Postinitialization
-
+setmetatable(mathext, meta)
 --Main
-return 
+return mathext
