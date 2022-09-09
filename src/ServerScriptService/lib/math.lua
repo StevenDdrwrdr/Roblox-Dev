@@ -5,6 +5,8 @@ local meta = {}
 local mathext = {}
 local mathutil = {}
 --Initialization
+
+--Functions
 meta.__index = function(_,k)
     if mathutil[k] then
         return mathutil[k]
@@ -19,8 +21,10 @@ end
 meta.__newindex = function()
     error("Unable to create value to math utility")
 end
---Functions
 
+mathutil.testFunction = function(a,b)
+    return a+b
+end
 --Events
 
 --Postinitialization
