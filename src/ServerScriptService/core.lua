@@ -1,7 +1,9 @@
---@class Script
+--Initialization
+if not (script:IsA("Script")) then error(string.format("Failed to load %s %s", script.Name, script.ClassName)) end
+--Variables
 
---[[
-    Developed by GMorolah (ID: 47918300)
-]]--
+--Functions
 
+--Events
 
+--Main
