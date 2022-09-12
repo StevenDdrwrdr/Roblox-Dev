@@ -4,14 +4,15 @@
 local UserInputService = game:GetService("UserInputService")
 
 local controller = {}
+local inputConnections = {}
 --Initialization
 
 --Functions
-function controller:BindInput(deviceType, input, callback)
+function controller:Bind(deviceType, input, callback)
 	
 end
 
-function controller:UnbindInput(deviceType, input)
+function controller:Unbind(deviceType, input)
 
 end
 --Events
@@ -19,3 +20,4 @@ end
 --Post Initialization
 
 --Main
+return controller

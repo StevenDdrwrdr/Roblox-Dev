@@ -7,7 +7,7 @@ local mathutil = {}
 --Initialization
 
 --Functions
-meta.__index = function(_,k)
+meta.__index = function(_ : table, k : any)
     if mathutil[k] then
         return mathutil[k]
     else
@@ -22,7 +22,7 @@ meta.__newindex = function()
     error("Unable to create value to math utility")
 end
 
-mathutil.testFunction = function(a,b)
+mathutil.testFunction = function(a : number, b : number)
     return a+b
 end
 --Events
